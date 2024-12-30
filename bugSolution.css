@@ -1,0 +1,12 @@
+Ensure that all values within the `calc()` function have consistent units.  For example, if subtracting pixels from a percentage, make sure all values have a unit explicitly defined:
+
+```css
+width: calc(100% - 10px);
+/* Correct: uses consistent units */
+```
+
+Instead of:
+
+```css
+width: calc(100% - 10); /* Incorrect: missing unit */
+```
